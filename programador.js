@@ -3,11 +3,11 @@ const later = require('later');
 const EventEmitter = require('./events');
 
 class Programador extends EventEmitter{
-    constructor(configuracion) {
+    constructor(configurar) {
       super();
     later.date.localTime();
 
-    if (configuracion instanceof Array){
+    if (configurar instanceof Array){
       for(var i=0; i<configuracion.lenght;i++){
         var pos =ArrayHora[i];
 

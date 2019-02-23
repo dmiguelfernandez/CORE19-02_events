@@ -13,22 +13,22 @@ const climatizador = new Climatizador(dormitorio);
 const termostato = new Termostato(dormitorio);
 
 //Configuramos el programador
-const ArrayProgramador =[
-    {hora: "07:00",
+const Programado =[
+    {hora: "06:00",
     temperatura: 22
     },
-    {hora :"08:30",
+    {hora :"09:30",
         temperatura:18
     },
-    {hora: "18:00",
+    {hora: "17:00",
     temperatura:22
     },
-    {hora: "21:11",
-    temperatura: 30
+    {hora: "21:15",
+    temperatura: 20
     }
 ];
 //Creamos un Programador para controlar la temperatura de la habitación
-const programador = new Programador(ArrayProgramador);
+const programador = new Programador(Programado);
 
 // Configuramos el termostato para controlar la temperatura:
 termostato.on('muchofrio', () => climatizador.calentar());
